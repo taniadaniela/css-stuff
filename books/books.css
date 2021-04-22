@@ -1,11 +1,13 @@
 html {
   height: 100%;
+  background-color: wheat;
 }
 
 #books-container {
   background-color: #724935;
   width: 60%;
   height: 600px;
+  margin: auto;
 }
 
 .books-row {
@@ -21,23 +23,26 @@ html {
 }
 
 .book {
+  cursor: pointer;
   height: 150px;
   float: left;
   margin-top: 9%;
 }
 
-.book h2 {
+.book h2, h3 {
   padding: 0;
-  margin: 35% 0 0 0;
-  font-size: 1rem;
   writing-mode: vertical-rl !important;
+  text-align: center;
+}
+
+.book h2 {
+  margin: 35% 2% 2% 2%;
+  font-size: 1rem;
 }
 
 .book h3 {
-  padding: 0;
-  margin: 35% 0 0 25%;
+  margin: 35% 2% 2% 17%;
   font-size: 0.75rem;
-  writing-mode: vertical-rl !important;
 }
 
 .book:hover {
@@ -53,16 +58,16 @@ html {
   color: whitesmoke;
 }
 
-.black-letter {
-  color: black;
-}
-
-.book-thin {
+.book-small {
   width: 1.5%;
 }
 
-.book-fat {
+.book-big {
   width: 2%;
+}
+
+.book-huge {
+  width: 3%;
 }
 
 .green {
@@ -79,4 +84,9 @@ html {
 
 .darkred {
   background-color: darkred;
+}
+
+.white {
+  background-color: whitesmoke;
+  color: black;
 }
